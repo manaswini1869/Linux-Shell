@@ -1,15 +1,60 @@
-Name: Manaswini Gogineni
-cs login: manaswini-09
-wisc ID: 908 543 2699
-email: mgogineni@wisc.edu
-status: everything works
+Custom C Shell
+This repository contains a custom implementation of a C shell, providing a command-line interface for users to interact with their operating system. The shell is designed to mimic some of the functionalities of popular shells like Bash, while also offering additional features and customizations.
 
-**Source**
-1. The GNU Manual - https://www.gnu.org/software/libc/manual/html_node/index.html#SEC_Contents 
+Features
+Command Execution: Execute commands entered by the user.
+Built-in Commands: Support for built-in commands such as cd, pwd, echo, etc.
+Input/Output Redirection: Allow redirection of input and output streams using < and >.
+Pipeline Support: Enable command pipelines using |.
+Background Processes: Run processes in the background using &.
+Tab Completion: Basic tab completion for commands and file paths.
+Customization: Easily customizable with configurable settings and options.
+Error Handling: Robust error handling to provide informative feedback to users.
+Getting Started
+To use the custom shell, follow these steps:
 
-For understanding signal handling, job control, understanding the implementation of the basic shell
+Clone the repository to your local machine:
 
-2. Stackoverflow - To understand the reason behind some of the segmentation faults.
+bash
+Copy code
+git clone (https://github.com/manaswini1869/Linux-Shell.git)
+Compile the shell code using a C compiler:
 
-3. Man Pages - To understand most of the libraries and the functions used in the implementation
+Copy code
+gcc -o shell wsh.c
+Run the compiled executable:
 
+bash
+Copy code
+./shell
+Start using the shell by entering commands!
+
+Usage
+Once the shell is running, you can enter commands just like you would in any other shell environment. Here are some examples of commands you can try:
+
+Navigate to a directory:
+
+bash
+Copy code
+cd /path/to/directory
+List files in the current directory:
+
+bash
+Copy code
+ls
+Execute a program:
+
+bash
+Copy code
+./wsh
+For a full list of supported commands and features, refer to the documentation or the source code.
+
+Contributing
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature/new-feature).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/new-feature).
+Create a new Pull Request.
